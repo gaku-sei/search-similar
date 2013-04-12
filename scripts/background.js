@@ -11,21 +11,21 @@ var getClickHandler = function(website) {
 };
 
 chrome.contextMenus.create({
-  'title' : 'Find similar image via Google Images',
+  'title' : 'Google Images',
   'type' : 'normal',
   'contexts' : ['image'],
   'onclick' : getClickHandler('google')
 });
 
 chrome.contextMenus.create({
-  'title' : 'Find similar image via Tineye',
+  'title' : 'Tineye',
   'type' : 'normal',
   'contexts' : ['image'],
   'onclick' : getClickHandler('tineye')
 });
 
 chrome.contextMenus.create({
-  'title' : 'Find similar image via Karmadecay',
+  'title' : 'KarmaDecay',
   'type' : 'normal',
   'contexts' : ['image'],
   'onclick' : getClickHandler('karmadecay')

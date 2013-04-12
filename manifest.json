@@ -1,9 +1,9 @@
 {
-  "name": "Simimg",
-  "version": "0.2.5",
+  "name": "Search Similar",
+  "version": "0.3.0",
   "manifest_version": 2,
 
-  "description": "Simimg adds 'search similar pictures' to right click. You may search via Google Images, Tineye or KarmaDecay.",
+  "description": "Search Similar adds a 'Search Similar' submenu to context menu. You may search via Google Images, Tineye or KarmaDecay.",
   "permissions": [
     "contextMenus",
     "tabs",
