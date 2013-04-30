@@ -1,6 +1,6 @@
 {
   "name": "Search Similar",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "manifest_version": 2,
 
   "description": "Search Similar adds a 'Search Similar' submenu to context menu. You may search via Google Images, Tineye or KarmaDecay.",
@@ -11,12 +11,6 @@
     "https://*/*"
   ],
   "background": {"scripts": ["scripts/background.js"]},
-  "content_scripts": [{
-    "matches": ["http://karmadecay.com/",
-                "http://www.tineye.com/"],
-    "js": ["scripts/jquery-1.9.1.min.js",
-           "scripts/contentscripts.js"]
-  }],
   "icons": {
     "16": "icons/icon-bitty.png",
     "128": "icons/icon-large.png"

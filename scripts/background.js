@@ -3,8 +3,9 @@ var getClickHandler = function(website) {
     var src = info.srcUrl, url = '';
     switch(website) {
       case 'google': url = 'http://images.google.com/searchbyimage?image_url=' + src; break;
-      case 'tineye': url = 'http://www.tineye.com/#' + src; break;
-      case 'karmadecay': url = 'http://karmadecay.com/#' + src; break;
+      case 'tineye': url = 'http://www.tineye.com/search?url=' + src; break;
+      case 'karmadecay': url = 'http://karmadecay.com/search?q=' + src; break;
+      case 'imgops': url = 'http://imgops.com/' + src; break;
     }
     chrome.tabs.create({url: url});
   };
@@ -29,4 +30,11 @@ chrome.contextMenus.create({
   'type' : 'normal',
   'contexts' : ['image'],
   'onclick' : getClickHandler('karmadecay')
+});
+
+chrome.contextMenus.create({
+  'title' : 'Open With ImgOps',
+  'type' : 'normal',
+  'contexts' : ['image'],
+  'onclick' : getClickHandler('imgops')
 });
