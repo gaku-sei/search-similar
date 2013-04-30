@@ -1,6 +1,6 @@
 {
   "name": "Search Similar",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "manifest_version": 2,
 
   "description": "Search Similar adds a 'Search Similar' submenu to context menu. You may search via Google Images, Tineye or KarmaDecay.",
